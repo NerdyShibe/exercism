@@ -4,18 +4,11 @@
 
 uint64_t square(uint8_t index)
 {
-    if (index <= 0 || index > TOTAL_SQUARES) return 0;
+    if (index < 1 || index > TOTAL_SQUARES) return 0;
 
-    uint8_t i = 1;
     uint64_t square_grains = 1;
 
-    while (i < index)
-    {
-        square_grains *= 2;
-        i += 1;
-    }
-
-    return square_grains;
+    return square_grains << (index - 1);
 }
 
 uint64_t total(void)
