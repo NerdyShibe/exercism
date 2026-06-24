@@ -1,2 +1,4 @@
+**/.exercism/* linguist-vendored
 **/test-framework/* linguist-vendored
-**/makefile linguist-vendored
+**/[Mm]akefile linguist-vendored
+**/test_*.c linguist-vendored
